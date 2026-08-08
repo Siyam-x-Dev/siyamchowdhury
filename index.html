@@ -3,42 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MATRIX // SYSTEM</title>
+  <meta name="theme-color" content="#020604">
+  <title>SIYAM // MATRIX TERMINAL</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <canvas id="matrix"></canvas>
-
+  <canvas id="particles"></canvas>
+  <div class="noise"></div>
   <div class="scanlines"></div>
-  <main class="terminal">
-    <div class="topbar">
-      <span>● SYSTEM ONLINE</span>
-      <span id="clock">00:00:00</span>
+
+  <div id="boot" class="boot">
+    <div class="boot-inner">
+      <div class="boot-logo">MATRIX<span>://</span>SYS</div>
+      <div id="bootText"></div>
+      <div class="boot-bar"><span id="bootProgress"></span></div>
+      <div class="boot-status">INITIALIZING SECURE INTERFACE...</div>
     </div>
+  </div>
 
-    <section class="hero">
-      <div class="glitch" data-text="MATRIX">MATRIX</div>
-      <p class="subtitle">WELCOME TO THE SYSTEM</p>
+  <div class="cursor-glow"></div>
 
-      <div class="terminal-box">
-        <p><span class="green">root@matrix</span>:~$ initialize_system</p>
-        <p class="muted">Loading secure interface...</p>
-        <p><span class="green">[ OK ]</span> Network connected</p>
-        <p><span class="green">[ OK ]</span> Encryption enabled</p>
-        <p><span class="green">[ OK ]</span> System ready</p>
-        <p class="cursor-line"><span class="green">root@matrix</span>:~$ <span class="cursor"></span></p>
+  <header class="nav">
+    <a class="brand" href="#home"><span>SIYAM</span><i>_X_DEV</i></a>
+    <nav>
+      <a href="#home">01_HOME</a>
+      <a href="#about">02_ABOUT</a>
+      <a href="#skills">03_SKILLS</a>
+      <a href="#projects">04_PROJECTS</a>
+      <a href="#contact">05_CONTACT</a>
+    </nav>
+    <button class="menu" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-grid"></div>
+      <div class="status-pill"><span class="dot"></span> SYSTEM ONLINE <b id="clock">00:00:00</b></div>
+
+      <div class="hero-copy">
+        <div class="eyebrow">WELCOME, USER // ACCESS LEVEL: <span>AUTHORIZED</span></div>
+        <h1 class="glitch" data-text="SIYAM">SIYAM</h1>
+        <p class="hero-sub">DIGITAL EXPLORER <span>//</span> CREATOR <span>//</span> TECHNOLOGY ENTHUSIAST</p>
+        <p class="type-line"><span>&gt;</span> <span id="typing"></span><span class="caret">█</span></p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">ENTER THE SYSTEM <span>↗</span></a>
+          <a href="#contact" class="btn">CONNECT <span>⌁</span></a>
+        </div>
       </div>
 
-      <div class="buttons">
-        <button onclick="showMessage('ACCESS GRANTED // Welcome to the Matrix.')">ENTER SYSTEM</button>
-        <button onclick="showMessage('STATUS: ONLINE // All systems operational.')">SYSTEM STATUS</button>
+      <div class="hud hud-left">
+        <span>CPU</span><b>ONLINE</b>
+        <span>NETWORK</span><b>SECURE</b>
+        <span>ENCRYPTION</span><b>ACTIVE</b>
+      </div>
+
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section id="about" class="section content-section">
+      <div class="section-label">02 // IDENTITY</div>
+      <div class="section-title">
+        <h2>ABOUT <span>ME</span></h2>
+        <p>Build your own digital identity inside the Matrix.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="profile-card reveal">
+          <div class="avatar-ring"><div class="avatar">S</div></div>
+          <div class="profile-name">SIYAM</div>
+          <div class="profile-role">USER / CREATOR</div>
+          <div class="profile-lines">
+            <p><span>ID</span> SIYAM-X-DEV</p>
+            <p><span>STATUS</span> <b>ONLINE</b></p>
+            <p><span>MODE</span> DIGITAL</p>
+          </div>
+        </div>
+
+        <div class="terminal-card reveal">
+          <div class="terminal-head"><span>root@matrix:~</span><span>● ● ●</span></div>
+          <div class="terminal-body">
+            <p><span class="prompt">root@matrix</span>:~$ whoami</p>
+            <p class="output">A technology-focused creator building things for the web.</p>
+            <p><span class="prompt">root@matrix</span>:~$ cat /about.txt</p>
+            <p class="output">Replace this text with your own introduction, goals, services or story.</p>
+            <p><span class="prompt">root@matrix</span>:~$ <span class="blink">_</span></p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>© 2026 MATRIX // ACCESS TERMINAL</footer>
+    <section id="skills" class="section content-section">
+      <div class="section-label">03 // CAPABILITIES</div>
+      <div class="section-title">
+        <h2>MY <span>SKILLS</span></h2>
+        <p>Replace these cards with your real skills.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill reveal"><div class="icon">&lt;/&gt;</div><h3>WEB</h3><p>HTML, CSS, JavaScript and modern interface design.</p><div class="meter"><i style="width:88%"></i></div></article>
+        <article class="skill reveal"><div class="icon">⌘</div><h3>CODE</h3><p>Programming, automation and problem solving.</p><div class="meter"><i style="width:78%"></i></div></article>
+        <article class="skill reveal"><div class="icon">⌁</div><h3>NETWORK</h3><p>Networking concepts, routers and connectivity.</p><div class="meter"><i style="width:84%"></i></div></article>
+        <article class="skill reveal"><div class="icon">⚙</div><h3>TECH</h3><p>Computer setup, troubleshooting and digital tools.</p><div class="meter"><i style="width:91%"></i></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section content-section">
+      <div class="section-label">04 // ARCHIVE</div>
+      <div class="section-title">
+        <h2>SELECTED <span>PROJECTS</span></h2>
+        <p>Your projects can appear here as interactive cards.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project reveal">
+          <div class="project-no">01</div>
+          <div class="project-art art-one"><span>010101</span></div>
+          <h3>MATRIX INTERFACE</h3>
+          <p>A cinematic terminal-style web experience.</p>
+          <button class="project-btn" data-project="MATRIX INTERFACE">OPEN PROJECT ↗</button>
+        </article>
+        <article class="project reveal">
+          <div class="project-no">02</div>
+          <div class="project-art art-two"><span>ACCESS//NODE</span></div>
+          <h3>DIGITAL NODE</h3>
+          <p>A clean dashboard for your digital services.</p>
+          <button class="project-btn" data-project="DIGITAL NODE">OPEN PROJECT ↗</button>
+        </article>
+        <article class="project reveal">
+          <div class="project-no">03</div>
+          <div class="project-art art-three"><span>SYS_READY</span></div>
+          <h3>YOUR NEXT PROJECT</h3>
+          <p>Replace this card with your newest work.</p>
+          <button class="project-btn" data-project="YOUR NEXT PROJECT">OPEN PROJECT ↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section content-section contact-section">
+      <div class="section-label">05 // COMMUNICATION</div>
+      <div class="contact-box reveal">
+        <div>
+          <div class="section-title compact">
+            <h2>CONNECT <span>WITH ME</span></h2>
+            <p>Replace the buttons below with your real links.</p>
+          </div>
+          <div class="contact-links">
+            <a href="#" onclick="return false">GITHUB <span>↗</span></a>
+            <a href="#" onclick="return false">WHATSAPP <span>↗</span></a>
+            <a href="#" onclick="return false">EMAIL <span>↗</span></a>
+          </div>
+        </div>
+        <div class="big-code">
+          <span>010</span><strong>1</strong><span>001</span><strong>0</strong><span>1101</span>
+          <small>TRANSMISSION READY</small>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <div id="message" class="message"></div>
+  <footer>
+    <span>© 2026 SIYAM // MATRIX TERMINAL</span>
+    <span>ENCRYPTED CONNECTION // <b>SECURE</b></span>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <button id="modalClose">×</button>
+      <div class="section-label">PROJECT ACCESS</div>
+      <h2 id="modalTitle">PROJECT</h2>
+      <p>Project details can be added here. This interactive panel is ready for your own content, links and screenshots.</p>
+      <div class="modal-code">ACCESS GRANTED // NODE OPEN // 0x4F2A</div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
