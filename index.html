@@ -3,181 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#020604">
-  <title>SIYAM // MATRIX TERMINAL</title>
+  <meta name="description" content="Siyam Chowdhury — Cyberpunk Premium Portfolio">
+  <title>SIYAM // CYBER PORTFOLIO</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <canvas id="matrix"></canvas>
-  <canvas id="particles"></canvas>
-  <div class="noise"></div>
   <div class="scanlines"></div>
 
-  <div id="boot" class="boot">
-    <div class="boot-inner">
-      <div class="boot-logo">MATRIX<span>://</span>SYS</div>
-      <div id="bootText"></div>
-      <div class="boot-bar"><span id="bootProgress"></span></div>
-      <div class="boot-status">INITIALIZING SECURE INTERFACE...</div>
-    </div>
-  </div>
-
-  <div class="cursor-glow"></div>
-
-  <header class="nav">
-    <a class="brand" href="#home"><span>SIYAM</span><i>_X_DEV</i></a>
-    <nav>
-      <a href="#home">01_HOME</a>
-      <a href="#about">02_ABOUT</a>
-      <a href="#skills">03_SKILLS</a>
-      <a href="#projects">04_PROJECTS</a>
-      <a href="#contact">05_CONTACT</a>
+  <header class="topbar">
+    <a class="brand" href="#home">SIYAM<span>_X</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#services">SERVICES</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
     </nav>
-    <button class="menu" id="menuBtn">☰</button>
   </header>
 
   <main>
-    <section id="home" class="hero section">
-      <div class="hero-grid"></div>
-      <div class="status-pill"><span class="dot"></span> SYSTEM ONLINE <b id="clock">00:00:00</b></div>
-
-      <div class="hero-copy">
-        <div class="eyebrow">WELCOME, USER // ACCESS LEVEL: <span>AUTHORIZED</span></div>
-        <h1 class="glitch" data-text="SIYAM">SIYAM</h1>
-        <p class="hero-sub">DIGITAL EXPLORER <span>//</span> CREATOR <span>//</span> TECHNOLOGY ENTHUSIAST</p>
-        <p class="type-line"><span>&gt;</span> <span id="typing"></span><span class="caret">█</span></p>
-
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="status"><i></i> SYSTEM ONLINE</div>
+        <p class="eyebrow">WELCOME TO MY DIGITAL SPACE</p>
+        <h1>SIYAM<br><span>CHOUDHURY</span></h1>
+        <p class="role">CYBERSPACE • WEB • TECHNOLOGY</p>
+        <p class="intro">A clean cyberpunk-style personal portfolio for my projects, skills, services and digital work.</p>
         <div class="hero-actions">
-          <a href="#projects" class="btn primary">ENTER THE SYSTEM <span>↗</span></a>
-          <a href="#contact" class="btn">CONNECT <span>⌁</span></a>
+          <a class="btn primary" href="#projects">VIEW PROJECTS</a>
+          <a class="btn" href="#contact">CONTACT ME</a>
         </div>
       </div>
 
-      <div class="hud hud-left">
-        <span>CPU</span><b>ONLINE</b>
-        <span>NETWORK</span><b>SECURE</b>
-        <span>ENCRYPTION</span><b>ACTIVE</b>
+      <div class="profile-card">
+        <div class="profile-ring">
+          <img src="profile.svg" alt="Siyam profile picture">
+        </div>
+        <div class="profile-name">SIYAM CHOUDHURY</div>
+        <div class="profile-tag">@Siyam-x-Dev</div>
+        <div class="phone">☎ 01XXXXXXXXX</div>
+        <div class="profile-line"></div>
+        <div class="mini-grid">
+          <span>STATUS<strong>ACTIVE</strong></span>
+          <span>MODE<strong>ONLINE</strong></span>
+        </div>
       </div>
-
-      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
     </section>
 
-    <section id="about" class="section content-section">
-      <div class="section-label">02 // IDENTITY</div>
-      <div class="section-title">
-        <h2>ABOUT <span>ME</span></h2>
-        <p>Build your own digital identity inside the Matrix.</p>
-      </div>
-
+    <section id="about" class="section">
+      <div class="section-title"><span>01</span> ABOUT ME</div>
       <div class="about-grid">
-        <div class="profile-card reveal">
-          <div class="avatar-ring"><div class="avatar">S</div></div>
-          <div class="profile-name">SIYAM</div>
-          <div class="profile-role">USER / CREATOR</div>
-          <div class="profile-lines">
-            <p><span>ID</span> SIYAM-X-DEV</p>
-            <p><span>STATUS</span> <b>ONLINE</b></p>
-            <p><span>MODE</span> DIGITAL</p>
-          </div>
-        </div>
-
-        <div class="terminal-card reveal">
-          <div class="terminal-head"><span>root@matrix:~</span><span>● ● ●</span></div>
+        <div class="terminal">
+          <div class="terminal-head"><span></span><span></span><span></span><b>about_siyam.exe</b></div>
           <div class="terminal-body">
-            <p><span class="prompt">root@matrix</span>:~$ whoami</p>
-            <p class="output">A technology-focused creator building things for the web.</p>
-            <p><span class="prompt">root@matrix</span>:~$ cat /about.txt</p>
-            <p class="output">Replace this text with your own introduction, goals, services or story.</p>
-            <p><span class="prompt">root@matrix</span>:~$ <span class="blink">_</span></p>
+            <p><em>root@siyam</em>:~$ whoami</p>
+            <p class="green">Siyam Chowdhury</p>
+            <p><em>root@siyam</em>:~$ mission</p>
+            <p>Learn, build, experiment and create useful digital solutions.</p>
+            <p><em>root@siyam</em>:~$ location</p>
+            <p>Bangladesh 🇧🇩</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <h3>MY DIGITAL PROFILE</h3>
+          <p>I am building my skills around computers, networking, web technology and digital services. This portfolio keeps everything organized in one place.</p>
+          <div class="facts">
+            <div><small>USERNAME</small><b>Siyam-x-Dev</b></div>
+            <div><small>FOCUS</small><b>Technology & Web</b></div>
+            <div><small>STYLE</small><b>Cyberpunk / Matrix</b></div>
+            <div><small>STATUS</small><b>Learning & Building</b></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section content-section">
-      <div class="section-label">03 // CAPABILITIES</div>
-      <div class="section-title">
-        <h2>MY <span>SKILLS</span></h2>
-        <p>Replace these cards with your real skills.</p>
-      </div>
-
-      <div class="skills-grid">
-        <article class="skill reveal"><div class="icon">&lt;/&gt;</div><h3>WEB</h3><p>HTML, CSS, JavaScript and modern interface design.</p><div class="meter"><i style="width:88%"></i></div></article>
-        <article class="skill reveal"><div class="icon">⌘</div><h3>CODE</h3><p>Programming, automation and problem solving.</p><div class="meter"><i style="width:78%"></i></div></article>
-        <article class="skill reveal"><div class="icon">⌁</div><h3>NETWORK</h3><p>Networking concepts, routers and connectivity.</p><div class="meter"><i style="width:84%"></i></div></article>
-        <article class="skill reveal"><div class="icon">⚙</div><h3>TECH</h3><p>Computer setup, troubleshooting and digital tools.</p><div class="meter"><i style="width:91%"></i></div></article>
+    <section id="skills" class="section">
+      <div class="section-title"><span>02</span> SKILLS & TOOLS</div>
+      <div class="cards">
+        <article class="card"><div class="icon">⌘</div><h3>WEB</h3><p>HTML, CSS, JavaScript and responsive website layouts.</p><div class="bar"><i style="width:82%"></i></div></article>
+        <article class="card"><div class="icon">⌁</div><h3>NETWORKING</h3><p>Router setup, Wi-Fi, LAN, ISP basics and troubleshooting.</p><div class="bar"><i style="width:76%"></i></div></article>
+        <article class="card"><div class="icon">▣</div><h3>COMPUTER</h3><p>Windows, hardware troubleshooting, software and PC support.</p><div class="bar"><i style="width:84%"></i></div></article>
+        <article class="card"><div class="icon">⚙</div><h3>DESIGN</h3><p>Posters, documents, UI ideas and digital branding.</p><div class="bar"><i style="width:72%"></i></div></article>
       </div>
     </section>
 
-    <section id="projects" class="section content-section">
-      <div class="section-label">04 // ARCHIVE</div>
-      <div class="section-title">
-        <h2>SELECTED <span>PROJECTS</span></h2>
-        <p>Your projects can appear here as interactive cards.</p>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project reveal">
-          <div class="project-no">01</div>
-          <div class="project-art art-one"><span>010101</span></div>
-          <h3>MATRIX INTERFACE</h3>
-          <p>A cinematic terminal-style web experience.</p>
-          <button class="project-btn" data-project="MATRIX INTERFACE">OPEN PROJECT ↗</button>
-        </article>
-        <article class="project reveal">
-          <div class="project-no">02</div>
-          <div class="project-art art-two"><span>ACCESS//NODE</span></div>
-          <h3>DIGITAL NODE</h3>
-          <p>A clean dashboard for your digital services.</p>
-          <button class="project-btn" data-project="DIGITAL NODE">OPEN PROJECT ↗</button>
-        </article>
-        <article class="project reveal">
-          <div class="project-no">03</div>
-          <div class="project-art art-three"><span>SYS_READY</span></div>
-          <h3>YOUR NEXT PROJECT</h3>
-          <p>Replace this card with your newest work.</p>
-          <button class="project-btn" data-project="YOUR NEXT PROJECT">OPEN PROJECT ↗</button>
-        </article>
+    <section id="services" class="section">
+      <div class="section-title"><span>03</span> SERVICES</div>
+      <div class="cards">
+        <article class="service"><b>01</b><h3>WEBSITE</h3><p>Simple, modern and responsive websites for personal or small projects.</p></article>
+        <article class="service"><b>02</b><h3>PC SUPPORT</h3><p>Basic Windows, software, printer and hardware troubleshooting.</p></article>
+        <article class="service"><b>03</b><h3>NETWORK SETUP</h3><p>Wi-Fi, router, LAN and home network configuration.</p></article>
+        <article class="service"><b>04</b><h3>DIGITAL DESIGN</h3><p>Clean posters, social graphics and document layouts.</p></article>
       </div>
     </section>
 
-    <section id="contact" class="section content-section contact-section">
-      <div class="section-label">05 // COMMUNICATION</div>
-      <div class="contact-box reveal">
+    <section id="projects" class="section">
+      <div class="section-title"><span>04</span> PROJECTS</div>
+      <div class="project-grid">
+        <article class="project"><span>PROJECT_01</span><h3>MATRIX WEBSITE</h3><p>Animated cyberpunk personal website with Matrix rain and terminal UI.</p><a href="#contact">OPEN →</a></article>
+        <article class="project"><span>PROJECT_02</span><h3>ISP WEBSITE</h3><p>A modern interface concept for internet packages and customer services.</p><a href="#contact">OPEN →</a></article>
+        <article class="project"><span>PROJECT_03</span><h3>DIGITAL SERVICES</h3><p>A categorized dashboard concept for everyday computer and digital services.</p><a href="#contact">OPEN →</a></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-title"><span>05</span> CONTACT</div>
+      <div class="contact-box">
         <div>
-          <div class="section-title compact">
-            <h2>CONNECT <span>WITH ME</span></h2>
-            <p>Replace the buttons below with your real links.</p>
-          </div>
-          <div class="contact-links">
-            <a href="#" onclick="return false">GITHUB <span>↗</span></a>
-            <a href="#" onclick="return false">WHATSAPP <span>↗</span></a>
-            <a href="#" onclick="return false">EMAIL <span>↗</span></a>
-          </div>
+          <p class="eyebrow">OPEN CHANNEL</p>
+          <h2>LET'S BUILD<br><span>SOMETHING COOL.</span></h2>
+          <p>Replace the placeholder number below with your real number before publishing.</p>
         </div>
-        <div class="big-code">
-          <span>010</span><strong>1</strong><span>001</span><strong>0</strong><span>1101</span>
-          <small>TRANSMISSION READY</small>
+        <div class="contact-details">
+          <a href="tel:01XXXXXXXXX">☎ 01XXXXXXXXX</a>
+          <a href="https://github.com/Siyam-x-Dev" target="_blank">⌘ github.com/Siyam-x-Dev</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>© 2026 SIYAM // MATRIX TERMINAL</span>
-    <span>ENCRYPTED CONNECTION // <b>SECURE</b></span>
-  </footer>
-
-  <div id="modal" class="modal">
-    <div class="modal-box">
-      <button id="modalClose">×</button>
-      <div class="section-label">PROJECT ACCESS</div>
-      <h2 id="modalTitle">PROJECT</h2>
-      <p>Project details can be added here. This interactive panel is ready for your own content, links and screenshots.</p>
-      <div class="modal-code">ACCESS GRANTED // NODE OPEN // 0x4F2A</div>
-    </div>
-  </div>
-
+  <footer>© <span id="year"></span> SIYAM_X // ALL SYSTEMS NOMINAL</footer>
   <script src="script.js"></script>
 </body>
 </html>

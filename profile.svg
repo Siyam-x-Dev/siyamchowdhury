@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<rect width="500" height="500" fill="#020604"/>
+<circle cx="250" cy="250" r="225" fill="#03150a" stroke="#00ff66" stroke-width="5"/>
+<circle cx="250" cy="190" r="78" fill="none" stroke="#00ff66" stroke-width="12"/>
+<path d="M110 390c35-100 245-100 280 0" fill="none" stroke="#00ff66" stroke-width="12"/>
+<text x="250" y="465" fill="#00ff66" font-family="monospace" font-size="34" text-anchor="middle" letter-spacing="5">SIYAM_X</text>
+</svg>
