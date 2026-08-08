@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATRIX // SYSTEM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+
+  <div class="scanlines"></div>
+  <main class="terminal">
+    <div class="topbar">
+      <span>● SYSTEM ONLINE</span>
+      <span id="clock">00:00:00</span>
+    </div>
+
+    <section class="hero">
+      <div class="glitch" data-text="MATRIX">MATRIX</div>
+      <p class="subtitle">WELCOME TO THE SYSTEM</p>
+
+      <div class="terminal-box">
+        <p><span class="green">root@matrix</span>:~$ initialize_system</p>
+        <p class="muted">Loading secure interface...</p>
+        <p><span class="green">[ OK ]</span> Network connected</p>
+        <p><span class="green">[ OK ]</span> Encryption enabled</p>
+        <p><span class="green">[ OK ]</span> System ready</p>
+        <p class="cursor-line"><span class="green">root@matrix</span>:~$ <span class="cursor"></span></p>
+      </div>
+
+      <div class="buttons">
+        <button onclick="showMessage('ACCESS GRANTED // Welcome to the Matrix.')">ENTER SYSTEM</button>
+        <button onclick="showMessage('STATUS: ONLINE // All systems operational.')">SYSTEM STATUS</button>
+      </div>
+    </section>
+
+    <footer>© 2026 MATRIX // ACCESS TERMINAL</footer>
+  </main>
+
+  <div id="message" class="message"></div>
+  <script src="script.js"></script>
+</body>
+</html>
